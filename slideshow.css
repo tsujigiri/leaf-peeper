@@ -27,3 +27,6 @@ div.slideshow div.slide {
   float: left;
 }
 
+div.slideshow div.navigation a {
+  outline: none;
+}

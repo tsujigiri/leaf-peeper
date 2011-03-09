@@ -16,6 +16,5 @@ div.slideshow div.navigation a {
 }
 
 div.slideshow div.navigation a.current_slide {
-  background: black;
-  color: white;
+  text-decoration: underline;
 }
