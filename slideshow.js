@@ -47,6 +47,7 @@ $(function() {
         navigation.find('a.current_slide').removeClass('current_slide');
 	$(event.currentTarget).addClass('current_slide');
 	carrier.animate({left: (i * -100 + '%')}, 400);
+	return false;
       });
     });
   });
