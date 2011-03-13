@@ -1,32 +1,43 @@
 div.slideshow div.frame-size {
-  width: 190px;
-  height: 200px;
-}
-
-div.slideshow {
-  width: 200px;
-  height: 250px;
+  width: 290px;
+  height: 300px;
 }
 
 div.slideshow div.slide-frame {
-  margin-left: 5px;
-  margin-right: 5px;
-  position: relative;
-  margin-top: 5px;
   overflow: hidden;
 }
 
 div.slideshow div.carrier {
+  position: relative;
   width: inherit;
   height: inherit;
-  position: relative;
 }
 
 div.slideshow div.slide {
-  position: relative;
   float: left;
 }
 
-div.slideshow div.navigation a {
-  outline: none;
+div.slideshow div.navigation {
+  margin-top: 5px;
+}
+
+div.slideshow div.navigation div.current_slide {
+  background-color: white;
+  color: black;
+  outline: black solid 1px;
+}
+
+div.slideshow div.navigation div {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
+  float: left;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
 }

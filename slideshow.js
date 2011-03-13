@@ -38,16 +38,15 @@ $(function() {
 
     slides.each(function(i) {
       var link_text = $(this).attr('data-name') || (i+1);
-      var link = $('<a href="#">' + link_text + '</a>');
-      navigation.append(link);
+      var link_box = $('<div>' + link_text + '</div>');
+      navigation.append(link_box);
       if(i == 0)
-        link.addClass('current_slide');
+        link_box.addClass('current_slide');
 
-      link.click(function(event) {
-        navigation.find('a.current_slide').removeClass('current_slide');
+      link_box.click(function(event) {
+        navigation.find('div.current_slide').removeClass('current_slide');
         $(event.currentTarget).addClass('current_slide');
         carrier.animate({left: (i * -100 + '%')}, 400);
-        return false;
       });
     });
   });
